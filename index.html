@@ -5,11 +5,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Pets Happy & Strong | online Shop</title>
-    <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Arimo|Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
+    <div class="general">
+        <nav>
+            <h1>Pets Happy & Strong</h1>
+            <p>Never your pet had had the best meal</p>
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">Collections</a>
+                </li>
+                <li>
+                    <a href="#">Purchase list</a>     
+                </li>
+            </ul>
+        </nav>
+        <header>
+            <div class="container">
+                <form action="">
+                    <select name="Pets" id="departments">
+                        <option value="Dog">Dog</option>
+                        <option value="Cat">Cat</option>
+                        <option value="Bird">Bird</option>
+                        <option value="Mouse">Mice</option>
+                        <option value="Fish">Fishes</option>
+                    </select>
+                    <input type="text" name="search" placeholder="Name of the meal">
+                    <input type="email" name="search" placeholder="Brand you wish">
+                    <input type="submit" value="submit">
+                </form>
+            </div>
+        </header>
+        <main>
+            <aside>
+                <h2>Filter for the product you are looking for</h2>
+                <form class="filters">
+                   <div class="price">
+                        <h3>Imported/National/local</h3>
+                        <input type="radio" name="Imported" value="Imported" checked>Imported products<br>
+                        <input type="radio" name="National" value="National">National products<br>
+                        <input type="radio" name="Local" value="Local">Local products 
+                   </div> 
+                   <div class="price">
+                        <h3>Price</h3>
+                         <input type="radio" name="$100" value="100" checked>Since $100<br>
+                         <input type="radio" name="$200" value="200">Since $200<br>
+                         <input type="radio" name="$300" value="More"> More
+                         <input type="text" name="Budget" value="Budget"> Tell us your budget
+                    </div> 
+                   <div class="price">
+                        <h3>Life Stage</h3>
+                        <input type="radio" name="puppies" value="Puppies" checked>Puppies<br>
+                        <input type="radio" name="Breed" value="National">Breed<br>
+                        <input type="radio" name="Big" value="Big Pets">Big Boys 
+                   </div> 
+                  
+                </form>
+            </aside>
+            <div class="general-content">
+                <div class="hot-ads">
+
+                 </div>
+                 <div class="products">
+                    <Section class="Dogs">
+                        <div></div>
+                    
+                    </Section>
+                    <Section class="Cats">
+                    
+                    </Section>
+                    <Section class="Birds">
+                    
+                    </Section>
+                    <Section class="Fishes">
+                    
+                    </Section>
+                 </div>
+            </div>
+        </main>
+        <footer>
+
+        </footer>
+    </div>
     
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
