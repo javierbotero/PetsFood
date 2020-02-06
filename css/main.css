@@ -1,3 +1,15 @@
+.fontRed {
+  font: 500 35px "Montserrat", sans-serif;
+  color: #c65b68; }
+
+.fontBlack {
+  font: 300 20px "Arimo", sans-serif;
+  color: #383838; }
+
+.fontGrey {
+  font: 200 20px "Montserrat", sans-serif;
+  color: #888888; }
+
 header {
   position: absolute;
   opacity: 0%;
@@ -25,5 +37,37 @@ header {
     .nav-bar ul li {
       float: left;
       text-decoration: none; }
+
+.buttonRed {
+  background-color: #c65b68;
+  color: white; }
+
+.customControls {
+  height: 47px;
+  width: 47px;
+  border-radius: 50%;
+  border: 1px solid #888888;
+  top: 40%; }
+
+.customPrev, .customNext {
+  background-color: #383838;
+  display: inline-block;
+  position: absolute;
+  height: 14%;
+  top: 282px;
+  left: 237px; }
+
+.customNext {
+  left: 277px; }
+
+.imagePrev, .imageNext {
+  background-image: url("../../assets/leftBtn.png");
+  background-size: 44px;
+  width: 40px;
+  height: 39px; }
+
+.imageNext {
+  display: inline-block;
+  background-image: url("../../assets/rightBtn.png"); }
 
 /*# sourceMappingURL=main.css.map */
