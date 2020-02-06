@@ -1,8 +1,29 @@
-.general {
-  background-color: 888888;
-  height: 200px; }
+header {
+  position: absolute;
+  opacity: 0%;
+  background-color: #c65b68;
+  height: 40vh;
+  background-image: url("../../assets/dog.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-blend-mode: soft-light; }
+  @media screen and (min-width: 1024px) {
+    header {
+      opacity: 100%;
+      position: initial; } }
 
-body {
-  background-color: red; }
+.general {
+  max-width: 1024px;
+  margin: 0 auto; }
+
+.nav-bar {
+  display: flex; }
+  .nav-bar ul {
+    display: flex;
+    list-style-type: none; }
+    .nav-bar ul li {
+      float: left;
+      text-decoration: none; }
 
 /*# sourceMappingURL=main.css.map */
