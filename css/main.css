@@ -70,4 +70,17 @@ header {
   display: inline-block;
   background-image: url("../../assets/rightBtn.png"); }
 
+.chunks {
+  display: flex; }
+
+.arrowLeftBlack {
+  background-image: url("../../assets/leftBtnBlack.png"); }
+
+.arrowRightBlack {
+  background-image: url("../../assets/rightBtnBlack.png"); }
+
+.sizeBlackArrows {
+  background-size: 50px;
+  height: 50px; }
+
 /*# sourceMappingURL=main.css.map */
