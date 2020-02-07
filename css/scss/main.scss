@@ -152,6 +152,16 @@ header {
   @extend %iconSections;
 }
 
+.catIcon {
+  background-image: url("../assets/cat.png");
+  @extend %iconSections;
+}
+
+.birdIcon {
+  background-image: url("../assets/bird.png");
+  @extend %iconSections;
+}
+
 .fishIcon {
   background-image: url("../assets/fish.png");
   @extend %iconSections;

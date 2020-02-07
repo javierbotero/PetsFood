@@ -98,7 +98,7 @@ header {
 .chunks {
   display: flex; }
 
-.dogIcon, .fishIcon, .plusIcon {
+.dogIcon, .catIcon, .birdIcon, .fishIcon, .plusIcon {
   width: 30px;
   height: 30px;
   background-position: center;
@@ -108,6 +108,12 @@ header {
 
 .dogIcon {
   background-image: url("../assets/dog.png"); }
+
+.catIcon {
+  background-image: url("../assets/cat.png"); }
+
+.birdIcon {
+  background-image: url("../assets/bird.png"); }
 
 .fishIcon {
   background-image: url("../assets/fish.png"); }
