@@ -18,6 +18,11 @@ $black: rgb(56, 56, 56);
   font: 200 20px $gotham;
   color: $grey;
 }
+
+.general {
+  max-width: 1200px;
+  margin: 0 auto;
+}
  
 header {
   position: absolute;
@@ -33,11 +38,15 @@ header {
     opacity: 100%;
     position: initial;
   }
-}
-
-.general {
-  max-width: 1024px;
-  margin: 0 auto;
+  .searchArea {
+    flex-direction: column;
+    text-align: center;
+    form select {
+      background-color: white;
+      padding: 5px 19px;
+      border-radius: 0;
+    }
+  }
 }
 
 .nav-bar {
@@ -104,13 +113,16 @@ header {
 
 .arrowLeftBlack {
   background-image: url("../../assets/leftBtnBlack.png");
+  left: -50px;
 }
 
 .arrowRightBlack {
   background-image: url("../../assets/rightBtnBlack.png");
+  right: -50px;
 }
 
 .sizeBlackArrows {
   background-size: 50px;
   height: 50px;
+  position: absolute;
 }
