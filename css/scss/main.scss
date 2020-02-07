@@ -35,7 +35,7 @@ $black: rgb(56, 56, 56);
 
 @media screen and (min-width: 1024px) {
   .showDesktop {
-    position: static;
+    position: relative;
     opacity: 1;
   }
 }
@@ -60,6 +60,10 @@ header {
 }
 
 .navBar {
+  background-color: $black;
+  position: sticky;
+  top: 0;
+  z-index: 1;
   ul {
     display: flex;
     list-style-type: none;
