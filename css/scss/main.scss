@@ -4,6 +4,10 @@ $red: rgb(198, 91, 104);
 $grey: rgb(136, 136, 136);
 $black: rgb(56, 56, 56);
 
+* {
+  border: 1px solid black !important;
+}
+
 .customTextRed {
  color: $red;
 }
@@ -41,38 +45,103 @@ $black: rgb(56, 56, 56);
 }
  
 header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: $red;
-  height: 40vh;
+  height: 50vh;
   background-image: url("../assets/dog.png");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
   background-blend-mode: soft-light;
   .searchArea {
-    flex-direction: column;
     text-align: center;
-    form select {
-      background-color: white;
-      padding: 5px 19px;
-      border-radius: 0;
+    align-items: center;
+    p {
+      margin-bottom: 5px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      @media screen and (min-width: 768px) {
+        height: 45px;
+        flex-direction: row;
+      }
+      * {
+        height: 45px;
+        border: 1px solid $red;
+        @media screen and (min-width: 768px) {
+          height: 100%;
+        }
+      }
+      select {
+        background-color: white;
+        padding: 5px 19px;
+        border-radius: 0;
+      }
+      .btnCustomBlack {
+        background-color: $black;
+        color: $grey;
+        font: 14px $gotham;
+        border: 0;
+        padding: 0 20px;
+        @media screen and (min-width: 768px) {
+          margin-left: 12px;
+        }
+      }
+
     }
   }
 }
 
 .navBar {
+  padding: 10px 0;
   background-color: $black;
   position: sticky;
   top: 0;
   z-index: 1;
+  overflow: auto;
+  .leftNav {
+    float: left;
+  }
+  .rightNav {
+    text-align: right;
+    float: right;
+    margin-right: 10px;
+  }
+  .leftNav > *, .rightNav > * {
+    vertical-align: middle;
+    margin: 0 5px;
+  }
+  h4 {
+    float: left;
+    color: white;
+    font: 20px $helvetica;
+    padding: 6px 0 0 10px;
+  }
+  .tinyIcon {
+    float: left;
+    @extend %iconSections;
+    background-image: url("../assets/cat.png");
+    border-radius: 20px;
+  }
   ul {
-    display: flex;
+    float: left;
     list-style-type: none;
     li {
+      * {
+        margin-right: 10px;
+      }
       float: left;
       text-decoration: none;
+      a {
+        @extend .fontGrey;
+        position: relative;
+        top: 3px;
+      }
     }
   }
-  display: flex;
 }
 
 .buttonRed {
@@ -151,6 +220,11 @@ header {
   opacity: 0.5;
 }
 
+.dogRed {
+  @extend %iconSections;
+  background-image: url("../assets/dogRed.png");
+}
+
 .dogIcon {
   background-image: url("../assets/dog.png");
   @extend %iconSections;
@@ -198,4 +272,28 @@ header {
 
 .customPrice {
   font: 20px $gotham;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr) 100px;
+  .bottomInfo {
+    grid-column-start: 1; 
+    grid-column-end: 2; 
+    grid-row-start: 1; 
+    grid-row-end: 2;
+  }
+  .categories {
+    grid-column-start: 1; 
+    grid-column-end: 2; 
+    grid-row-start: 2; 
+    grid-row-end: 3;
+  }
+  .socialMedia {
+    grid-column-start: 1; 
+    grid-column-end: 2; 
+    grid-row-start: 3; 
+    grid-row-end: 4;
+  }
 }
