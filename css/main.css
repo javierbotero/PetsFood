@@ -211,7 +211,8 @@ footer {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 100px 200px 100px;
-  padding: 0 30px; }
+  padding: 0 30px;
+  text-align: center; }
   footer .categories > * {
     list-style-type: none;
     float: left; }
@@ -237,7 +238,23 @@ footer {
     footer .socialMedia span {
       font: 10px "Montserrat", sans-serif; }
     footer .socialMedia ul {
-      text-align: end; }
+      text-align: center;
+      margin: 10px 0; }
+  @media screen and (min-width: 768px) {
+    footer {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 100px; }
+      footer .bottomInfo {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2; }
+        footer .bottomInfo p {
+          display: block; }
+      footer .categories {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2; }
+      footer .socialMedia {
+        grid-column: 1 / 3;
+        grid-row: 2 / 3; } }
   @media screen and (min-width: 1024px) {
     footer {
       grid-template-columns: 1fr 1fr 1fr;
@@ -247,8 +264,6 @@ footer {
       footer .bottomInfo {
         grid-column: 1 / 3;
         grid-row: 1 / 3; }
-        footer .bottomInfo p {
-          display: block; }
       footer .categories {
         grid-column: 3 / 4;
         grid-row: 1 / 3; }
@@ -256,6 +271,8 @@ footer {
         grid-column: 1 / 4;
         grid-row: 3 / 4; }
         footer .socialMedia span {
-          float: left; } }
+          float: left; }
+        footer .socialMedia ul {
+          text-align: end; } }
 
 /*# sourceMappingURL=main.css.map */
