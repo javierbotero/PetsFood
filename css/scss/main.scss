@@ -281,12 +281,44 @@ header {
   font: 20px $gotham;
 }
 
+// Display for mobile
+
+.displayMobile {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  .arrangeCards {
+    flex-basis: 40%;
+    margin: 10px 0;
+  }
+  .arrangeTitles {
+    flex-basis: 95%;
+    overflow: hidden; 
+    margin: 20px 0;
+  }
+  .arrangeHotAdds {
+    flex-basis: 50%;
+    margin: 30px 0;
+  }
+  @media screen and (min-width: 768px){
+    .arrangeCards {
+      flex-basis: 30%;
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    display: none;
+  }
+}
+
+// End Display for mobile
+
 footer {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 100px 200px 100px;
   padding: 0 30px;
   text-align: center;
+  margin-top: 30px;
   .categories > * {
     list-style-type: none;
     float: left;

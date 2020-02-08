@@ -207,12 +207,34 @@ header {
 .customPrice {
   font: 20px "Montserrat", sans-serif; }
 
+.displayMobile {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+  .displayMobile .arrangeCards {
+    flex-basis: 40%;
+    margin: 10px 0; }
+  .displayMobile .arrangeTitles {
+    flex-basis: 95%;
+    overflow: hidden;
+    margin: 20px 0; }
+  .displayMobile .arrangeHotAdds {
+    flex-basis: 50%;
+    margin: 30px 0; }
+  @media screen and (min-width: 768px) {
+    .displayMobile .arrangeCards {
+      flex-basis: 30%; } }
+  @media screen and (min-width: 1024px) {
+    .displayMobile {
+      display: none; } }
+
 footer {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 100px 200px 100px;
   padding: 0 30px;
-  text-align: center; }
+  text-align: center;
+  margin-top: 30px; }
   footer .categories > * {
     list-style-type: none;
     float: left; }
