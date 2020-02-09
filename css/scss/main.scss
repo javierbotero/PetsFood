@@ -418,9 +418,21 @@ footer {
   img {
     display: inline-block;
     width: 30%;
+    vertical-align: text-top;
   }
   .contentItem {
     display: inline-block;
     width: 68%;
+    vertical-align: top;
+    .titleResults {
+      display: flex;
+      justify-content: space-between;
+    }
+    .contentItemResult {
+      .priceResults {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
   }
 }
