@@ -3,7 +3,6 @@ $helvetica: 'Arimo', sans-serif;
 $red: rgb(198, 91, 104);
 $grey: rgb(136, 136, 136);
 $black: rgb(56, 56, 56);
-@use 'results';
 
 .customTextRed {
  color: $red;
@@ -399,4 +398,29 @@ footer {
   }
 }
 
+// Results page 
 
+.contentResults {
+  display: grid;
+  grid-template: 200px 1fr / 1fr;
+  aside {
+    overflow: hidden;
+    grid-row: 1 / 2;
+    grid-column: 1;
+  }
+  .resultsSearch {
+    grid-row: 2 / 3;
+    grid-column: 1;
+  } 
+}
+
+.resultItem {
+  img {
+    display: inline-block;
+    width: 30%;
+  }
+  .contentItem {
+    display: inline-block;
+    width: 68%;
+  }
+}
