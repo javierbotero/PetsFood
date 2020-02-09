@@ -3,6 +3,7 @@ $helvetica: 'Arimo', sans-serif;
 $red: rgb(198, 91, 104);
 $grey: rgb(136, 136, 136);
 $black: rgb(56, 56, 56);
+@use 'results';
 
 .customTextRed {
  color: $red;
