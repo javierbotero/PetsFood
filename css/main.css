@@ -27,6 +27,14 @@
   margin: 0 auto;
 }
 
+.hot-ads {
+  padding: 7% 1%;
+}
+
+.products {
+  padding-top: 5%;
+}
+
 .showDesktop {
   position: absolute;
   opacity: 0;
@@ -205,20 +213,22 @@ header .searchArea form .btnCustomBlack {
   background-color: #383838;
   display: inline-block;
   position: absolute;
-  height: 12%;
-  top: 88%;
-  left: 297px;
+  height: 10%;
+  top: 94%;
+  left: 79%;
 }
 
 .customNext {
-  left: 337px;
+  left: 89%;
 }
 
 .imagePrev,
 .imageNext {
   background-image: url("../assets/leftBtn.png");
-  background-size: 44px;
+  background-size: 30px;
   width: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
   height: 39px;
 }
 
@@ -339,9 +349,18 @@ header .searchArea form .btnCustomBlack {
 
 footer {
   padding-top: 4%;
-  text-align: center;
+  text-align: justify;
   margin-top: 30px;
+  padding: 5%;
 }
+
+.socialMedia {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 50%;
+  margin-top: 10%;
+}  
 
 footer .bottomInfo {
   font: 12px "Montserrat", sans-serif;
@@ -363,6 +382,10 @@ footer .socialMedia span {
 footer .socialMedia ul {
   text-align: center;
   margin: 10px 0;
+}
+
+footer span {
+  margin: 1% 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -416,15 +439,11 @@ footer .socialMedia ul {
 
   footer .socialMedia {
     grid-column: 1 / 4;
-    grid-row: 3 / 4;
+    grid-row: 3 / 4;    
   }
 
   footer .socialMedia span {
     float: left;
-  }
-
-  footer .socialMedia ul {
-    text-align: end;
   }
 }
 
@@ -462,6 +481,19 @@ footer .socialMedia ul {
 .contentResults .resultsSearch {
   grid-row: 2 / 3;
   grid-column: 1;
+}
+
+@media screen and (min-width: 1110px) {
+  .socialMedia {
+    justify-content: space-between;
+    flex-direction: row;
+    text-align: unset;
+  }
+  
+  .socialMedia span {
+    display: inline-block;
+    text-align: unset;
+  }
 }
 
 @media screen and (min-width: 768px) {
