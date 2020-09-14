@@ -1,0 +1,540 @@
+.customTextRed {
+  color: #c65b68;
+}
+
+.fontRed {
+  font: 500 35px "Montserrat", sans-serif;
+  color: #c65b68;
+}
+
+.fontBlack {
+  font: 300 20px "Arimo", sans-serif;
+  color: #383838;
+}
+
+.fontGrey,
+.navBar ul li a {
+  font: 200 20px "Montserrat", sans-serif;
+  color: #888;
+}
+
+.general {
+  background-color: #f0f0f0;
+}
+
+.specialMargin {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hot-ads {
+  padding: 7% 1%;
+}
+
+.products {
+  padding-top: 5%;
+}
+
+.showDesktop {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 1024px) {
+  .hideElement {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .showDesktop {
+    position: relative;
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #c65b68;
+  height: 56vh;
+  background-image: url("../assets/dog.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-blend-mode: soft-light;
+}
+
+.titleSections * {
+  padding: 0 5px;
+  margin-bottom: 0;
+  margin-right: 10px;
+  color: #383838;
+}
+
+.titleSections p {
+  font: 16px "Arimo", sans-serif;
+}
+
+header .searchArea {
+  text-align: center;
+  align-items: center;
+}
+
+header .searchArea p {
+  margin-bottom: 5px;
+}
+
+footer .categories * {
+  list-style-type: none;
+}
+
+header .searchArea form {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  header .searchArea form {
+    height: 45px;
+    flex-direction: row;
+  }
+}
+
+header .searchArea form * {
+  height: 45px;
+  border: 1px solid #c65b68;
+}
+
+@media screen and (min-width: 768px) {
+  header .searchArea form * {
+    height: 100%;
+  }
+}
+
+header .searchArea form select {
+  background-color: white;
+  padding: 5px 19px;
+  border-radius: 0;
+}
+
+header .searchArea form .btnCustomBlack {
+  background-color: #383838;
+  color: #888;
+  font: 14px "Montserrat", sans-serif;
+  border: 0;
+  padding: 0 20px;
+}
+
+@media screen and (min-width: 768px) {
+  header .searchArea form .btnCustomBlack {
+    margin-left: 12px;
+  }
+}
+
+.navBar {
+  padding: 10px 0;
+  background-color: #383838;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  overflow: auto;
+}
+
+.navBar ul li * {
+  margin-right: 10px;
+}
+
+.navBar .leftNav {
+  float: left;
+}
+
+.navBar .rightNav {
+  text-align: right;
+  float: right;
+  margin-right: 10px;
+}
+
+.navBar .leftNav > *,
+.navBar .rightNav > * {
+  vertical-align: middle;
+  margin: 0 5px;
+}
+
+.navBar h4 {
+  float: left;
+  color: white;
+  font: 20px "Arimo", sans-serif;
+  padding: 6px 0 0 10px;
+}
+
+.navBar .tinyIcon {
+  float: left;
+  background-image: url("../assets/cat.png");
+  border-radius: 20px;
+}
+
+.navBar ul {
+  float: left;
+  list-style-type: none;
+}
+
+.navBar ul li {
+  float: left;
+  text-decoration: none;
+}
+
+.navBar ul li a {
+  position: relative;
+  top: 3px;
+}
+
+.buttonRed {
+  background-color: #c65b68;
+  color: white;
+}
+
+.customControls {
+  height: 47px;
+  width: 47px;
+  border-radius: 50%;
+  border: 1px solid #888;
+  top: 40%;
+}
+
+.customPrev,
+.customNext {
+  background-color: #383838;
+  display: inline-block;
+  position: absolute;
+  height: 10%;
+  top: 94%;
+  left: 79%;
+}
+
+.customNext {
+  left: 89%;
+}
+
+.imagePrev,
+.imageNext {
+  background-image: url("../assets/leftBtn.png");
+  background-size: 30px;
+  width: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 39px;
+}
+
+.imageNext {
+  display: inline-block;
+  background-image: url("../assets/rightBtn.png");
+}
+
+.titleSections {
+  display: flex;
+  align-items: center;
+}
+
+.titleSections h3 {
+  font: bold 25px "Arimo", sans-serif;
+}
+
+.chunks {
+  display: flex;
+}
+
+.navBar .tinyIcon,
+.dogRed,
+.dogIcon,
+.catIcon,
+.birdIcon,
+.fishIcon,
+.plusIcon {
+  width: 30px;
+  height: 30px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+}
+
+.dogRed {
+  background-image: url("../assets/dogRed.png");
+}
+
+.dogIcon {
+  background-image: url("../assets/dog.png");
+}
+
+.catIcon {
+  background-image: url("../assets/cat.png");
+}
+
+.birdIcon {
+  background-image: url("../assets/bird.png");
+}
+
+.fishIcon {
+  background-image: url("../assets/fish.png");
+}
+
+.plusIcon {
+  background-image: url("../assets/plus.png");
+  display: inline-block;
+  opacity: 1;
+  float: left;
+  border: 1px solid #888;
+}
+
+.arrowLeftBlack {
+  background-image: url("../assets/leftBtnBlack.png");
+  left: -50px;
+}
+
+.arrowRightBlack {
+  background-image: url("../assets/rightBtnBlack.png");
+  right: -50px;
+}
+
+.sizeBlackArrows {
+  background-size: 50px;
+  height: 50px;
+  position: absolute;
+}
+
+.customPrice {
+  font: 20px "Montserrat", sans-serif;
+}
+
+.displayMobile {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.displayMobile .arrangeCards {
+  flex-basis: 40%;
+  margin: 10px 0;
+}
+
+.displayMobile .arrangeTitles {
+  flex-basis: 95%;
+  overflow: hidden;
+  margin: 20px 0;
+}
+
+.displayMobile .arrangeHotAdds {
+  flex-basis: 50%;
+  margin: 30px 0;
+}
+
+@media screen and (min-width: 768px) {
+  .displayMobile .arrangeCards {
+    flex-basis: 30%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .displayMobile {
+    display: none;
+  }
+}
+
+footer {
+  text-align: justify;
+  margin-top: 30px;
+  padding: 5%;
+}
+
+.socialMedia {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 50%;
+  margin-top: 10%;
+}
+
+footer .bottomInfo {
+  font: 12px "Montserrat", sans-serif;
+}
+
+footer .bottomInfo p {
+  font: 12px "Montserrat", sans-serif;
+  display: none;
+}
+
+footer .categories ul > li > a {
+  color: #383838;
+}
+
+footer span {
+  margin: 1% 0;
+}
+
+footer .socialMedia span {
+  font: 10px "Montserrat", sans-serif;
+}
+
+footer .socialMedia ul {
+  text-align: center;
+  margin: 10px 0;
+}
+
+@media screen and (min-width: 768px) {
+  footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 100px;
+  }
+
+  footer .bottomInfo {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+
+  footer .bottomInfo p {
+    display: block;
+  }
+
+  footer .categories {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+
+  footer .categories ul {
+    float: left;
+  }
+
+  footer .socialMedia {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  footer {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 100px;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  footer .bottomInfo {
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+  }
+
+  footer .categories {
+    grid-column: 3 / 4;
+    grid-row: 1 / 3;
+  }
+
+  footer .socialMedia {
+    grid-column: 1 / 4;
+    grid-row: 3 / 4;
+  }
+
+  footer .socialMedia span {
+    float: left;
+  }
+}
+
+.contentResults aside {
+  overflow: hidden;
+  grid-row: 1 / 2;
+  grid-column: 1;
+  font: 14px "Arimo", sans-serif;
+}
+
+.contentResults aside .price {
+  color: #888;
+}
+
+.contentResults aside .price h5 {
+  font-weight: 600;
+  color: #383838;
+  border-bottom: 1px solid grey;
+  margin-right: 50%;
+  margin-top: 4%;
+  margin-bottom: 3%;
+  padding-bottom: 2%;
+}
+
+.contentResults aside .price input {
+  margin-right: 3%;
+  margin-top: 3%;
+}
+
+.contentResults aside .price .ownBudget {
+  border: 1px solid #888;
+  margin-left: 3%;
+}
+
+.contentResults .resultsSearch {
+  grid-row: 2 / 3;
+  grid-column: 1;
+}
+
+@media screen and (min-width: 1110px) {
+  .socialMedia {
+    justify-content: space-between;
+    flex-direction: row;
+    text-align: unset;
+  }
+
+  .socialMedia span {
+    display: inline-block;
+    text-align: unset;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contentResults {
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .contentResults a {
+    grid-row: 1;
+    grid-column: 2 / 3;
+  }
+
+  .contentResults aside {
+    grid-column: 1 / 2;
+    grid-row: 2;
+  }
+
+  .contentResults .resultsSearch {
+    grid-column: 2 / 3;
+  }
+}
+
+.resultItem img {
+  display: inline-block;
+  width: 30%;
+  vertical-align: text-top;
+}
+
+.resultItem .contentItem {
+  display: inline-block;
+  width: 68%;
+  vertical-align: top;
+}
+
+.resultItem .contentItem .titleResults {
+  display: flex;
+  justify-content: space-between;
+}
+
+.resultItem .contentItem .contentItemResult .priceResults {
+  display: flex;
+  justify-content: space-between;
+}
