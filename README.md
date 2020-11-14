@@ -13,7 +13,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://raw.githack.com/javierbotero/PetsFood/newDesign/index.html)
+[Live Demo Link](https://javierbotero.github.io/PetsFood/)
 
 ## Video explanation of the project
 
